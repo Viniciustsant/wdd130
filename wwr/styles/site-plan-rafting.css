@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+:root {
+    --primary-color: #FED766;
+    --secondary-color: #EEE1B3;
+    --accent1-color: #5AB1BB;
+    --accent2-color: #0B5563;
+    --accent3-color: #1E152A;
+
+    --heading-font: 'EB Garamond', serif; /* Set heading font */
+    --paragraph-font: 'Poppins', sans-serif; /* Set paragraph font */
+
+    --nav-background-color: #5AB1BB;
+    --nav-link-color: #1E152A;
+    --nav-hover-link-color: #EEE1B3;
+    --nav-hover-background-color: #FED766;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font); /* Set font-family for headings */
+    color: var(--accent2-color); /* Set color for headings */
+}
+
+header {
+    padding: 20px; /* Add padding to header */
+    background-color: var(--primary-color); /* Set background color for header */
+}
+
+p {
+    padding: 10px 0; /* Add padding to paragraphs */
+}
+
+nav {
+    background-color: var(--nav-background-color); /* Set background color for navigation */
+}
+
+nav a {
+    color: var(--nav-link-color); /* Set color for navigation links */
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color); /* Set color for navigation links on hover */
+    background-color: var(--nav-hover-background-color); /* Set background color for navigation links on hover */
+}
