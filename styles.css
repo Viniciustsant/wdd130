@@ -33,10 +33,16 @@ main {
 aside {
     width: 20rem;
     text-align: center;
+    position: relative;
 }
 aside img {
     width: 200px;
     height: auto;
+}
+aside h2{
+    position: absolute;
+    top: 30px;
+    left: 400px;
 }
 footer {
     margin-top: 15px;
