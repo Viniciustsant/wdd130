@@ -46,40 +46,31 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-/* Hero container styles */
 .hero {
-    position: relative; /* Position the hero container relatively */
+    position: relative;
 }
-
-/* Hero image styles */
 .hero img {
-    display: block; /* Make the image a block element */
-    width: 100%; /* Relative width to fill the container */
-    height: auto; /* Maintain aspect ratio */
+    display: block;
+    width: 100%; 
+    height: auto; 
 }
-
-/* Heading (h1) styles */
 .hero h1 {
-    position: absolute; /* Position the heading absolutely */
-    top: 50%; /* Position it 50% from the top of the hero container */
-    left: 50%; /* Position it 50% from the left of the hero container */
-    transform: translate(-50%, -50%); /* Center the heading */
-    z-index: 1; /* Ensure the heading is on top of the hero image */
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1; 
 }
-
-/* Article styles */
 .hero article {
-    position: absolute; /* Position the article absolutely */
-    top: 50%; /* Position it 50% from the top of the hero container */
-    left: 50%; /* Position it 50% from the left of the hero container */
-    transform: translate(-50%, -50%); /* Center the article */
-    z-index: 1; /* Ensure the article is on top of the hero image */
-    background-color: rgba(30, 21, 42, 0.7); /* Set background color with opacity */
-    padding: 20px; /* Add padding for readability */
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(30, 21, 42, 0.7);
+    padding: 20px;
 }
-
-/* Image inside article styles */
 .hero article img {
-    float: right; /* Float the image to the right */
-    margin-left: 20px; /* Add space between the image and paragraph */
+    float: right;
+    margin-left: 20px;
 }
