@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+:root {
+    --primary-color: #FED766;
+    --secondary-color: #EEE1B3;
+    --accent1-color: #5AB1BB;
+    --accent2-color: #0B5563;
+    --accent3-color: #1E152A;
+
+    --heading-font: 'EB Garamond', serif; /* Set heading font */
+    --paragraph-font: 'Poppins', sans-serif; /* Set paragraph font */
+
+    --nav-background-color: #5AB1BB;
+    --nav-link-color: #1E152A;
+    --nav-hover-link-color: #EEE1B3;
+    --nav-hover-background-color: #FED766;
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+p {
+    font-family: var(--paragraph-font);
+    color: var(--accent3-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+}
+nav a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+.sociallinks a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Hero container styles */
+.hero {
+    position: relative; /* Position the hero container relatively */
+}
+
+/* Hero image styles */
+.hero img {
+    display: block; /* Make the image a block element */
+    width: 100%; /* Relative width to fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Heading (h1) styles */
+.hero h1 {
+    position: absolute; /* Position the heading absolutely */
+    top: 50%; /* Position it 50% from the top of the hero container */
+    left: 50%; /* Position it 50% from the left of the hero container */
+    transform: translate(-50%, -50%); /* Center the heading */
+    z-index: 1; /* Ensure the heading is on top of the hero image */
+}
+
+/* Article styles */
+.hero article {
+    position: absolute; /* Position the article absolutely */
+    top: 50%; /* Position it 50% from the top of the hero container */
+    left: 50%; /* Position it 50% from the left of the hero container */
+    transform: translate(-50%, -50%); /* Center the article */
+    z-index: 1; /* Ensure the article is on top of the hero image */
+    background-color: rgba(30, 21, 42, 0.7); /* Set background color with opacity */
+    padding: 20px; /* Add padding for readability */
+}
+
+/* Image inside article styles */
+.hero article img {
+    float: right; /* Float the image to the right */
+    margin-left: 20px; /* Add space between the image and paragraph */
+}
