@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
 :root {
     --primary-color: #FED766;
     --secondary-color: #EEE1B3;
@@ -14,29 +15,53 @@
     --nav-hover-link-color: #EEE1B3;
     --nav-hover-background-color: #FED766;
 }
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
+    margin-bottom: 10px;
 }
 p {
     font-family: var(--paragraph-font);
     color: var(--accent3-color);
+    margin-bottom: 20px;
 }
 nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: var(--nav-background-color);
 }
 nav a {
     text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
     color: var(--nav-link-color);
 }
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    text-decoration: none;
 }
 footer {
     background-color: var(--primary-color);
     color: white;
-    padding: 20px 0;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 .sociallinks a {
     text-decoration: none;
@@ -48,29 +73,65 @@ body {
 }
 .hero {
     position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
 }
 .hero img {
     display: block;
     width: 100%; 
     height: auto; 
 }
-.hero h1 {
+.hero h1, .hero article {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; 
+    color: white;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+.hero h1 {
+    top: 50px;
+    background-color: rgba(15, 14, 14, 0.534);
 }
 .hero article {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    background-color: rgba(30, 21, 42, 0.7);
+    background-color: rgba(15, 14, 14, 0.534);
     padding: 20px;
 }
 .hero article img {
+    width: 200px;
     float: right;
     margin-left: 20px;
+}
+.hero article p {
+    margin-bottom: 10px;
+    color: white;
+}
+header {
+    display: flex;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+}
+header img{
+    max-width: 100px;
+    height: auto;
+}
+figure {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+figcaption {
+    margin-top: 10px;
+    font-size: 12px;
 }
