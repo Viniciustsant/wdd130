@@ -34,7 +34,7 @@ body {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: rgb(22, 0, 75);
     margin-bottom: 10px;
 }
 
@@ -217,8 +217,8 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: rgb(185, 141, 17);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -246,7 +246,7 @@ button[type="submit"]:hover {
   
   .trip h2 {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: rgb(22, 0, 75);
     margin-top: 10px;
   }
   
@@ -256,7 +256,7 @@ button[type="submit"]:hover {
   
   .cta-button {
     background-color: var(--primary-color);
-    color: #fff;
+    color: black;
     border: none;
     padding: 15px 40px;
     border-radius: 8px;
@@ -289,7 +289,7 @@ button[type="submit"]:hover {
   
   table th {
     background-color: var(--primary-color);
-    color: white;
+    color: rgb(22, 0, 75);
   }
   
   table td {
@@ -320,8 +320,8 @@ button[type="submit"]:hover {
 .purpose,
 .offerings {
     text-align: center;
-    max-width: 300px; /* Largura máxima de cada bloco */
-    margin: 0 auto; /* Centraliza os blocos */
+    max-width: 300px; 
+    margin: 0 auto; 
 }
 
 .purpose img,
@@ -334,13 +334,13 @@ button[type="submit"]:hover {
 
 .purpose h2,
 .offerings h2 {
-    margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+    margin-top: 20px; 
 }
 .home-page {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Divide o espaço em duas colunas */
-    gap: 20px; /* Espaçamento entre os itens */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Adiciona um pouco de padding nas laterais */
+    padding: 0 20px; 
 }
